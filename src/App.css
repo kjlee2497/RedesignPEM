@@ -162,7 +162,7 @@ html, body {
 
 .whoWeAre {
   background: linear-gradient(0.25turn,rgba(255,255,255,.00), rgba(255,255,255, .5), rgba(255,255,255,.8)),
-  url("picnic-don2.jpg");
+  url("/picnic-don2.jpg");
   background-size: 100%;
 
   min-width: 100vw;
