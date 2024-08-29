@@ -1,0 +1,182 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --pem-logo: #3771A6;
+  --hover1: rgb(77, 237, 255);
+}
+
+#root {
+  font-family: "Montserrat", sans-serif;
+
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  overflow: auto;
+}
+
+.bannerVid {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.navy {
+  background-color: var(--pem-logo);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  background-color: white;
+
+  margin: 0% auto 0% auto;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.navbarLogo {
+  width: 75px;
+  height: 75px;
+  margin-right: 4rem;
+}
+
+.navbarLinks {
+  color: var(--pem-logo);
+  margin: 0 4.5rem;
+  padding-top: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbarLinks:hover {
+  color: var(--hover1);
+  font-weight: 700;
+}
+
+.bannerContent {
+  color: white;
+  font-size: 240%;
+  font-weight: 500;
+
+  width: 50%;
+  margin: 21% 0% 15% 47%;
+/* top right bottom left */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tagOther {
+  color: var(--pem-logo);
+  font-weight: 600;
+}
+
+.tagWorld {
+  margin-left: 23%;
+}
+
+.tagButtons {
+  flex-direction: row;
+  margin-left: 22%;
+}
+
+.button {
+  background-color: var(--pem-logo);
+  color: white;
+  border-radius: 13px;
+  border: none;
+
+  padding: 1.5% 3%;
+  margin: 3% 4%;
+  font-size: 14px;
+}
+
+.button:hover{
+  background-color: var(--hover1);
+  font-size: 41%;
+  font-weight: 600;
+}
+
+.motto {
+  margin: 1% 3%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  background-color: white;
+  padding: 4% 15%;
+}
+
+.mottoContent {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: left;
+
+  width: 80vw;
+
+  color: black;
+  font-size: 225%;
+  font-weight: 500;
+}
+
+.motto span{
+  margin: 1% 0%;
+  width: auto;
+}
+
+.motto b{
+  color: var(--pem-logo);
+  font-size: 140%;
+}
+
+.mottoLine {
+  height: 150px;
+  border-left: 3px solid rgb(170, 168, 168);
+  margin: 7% auto;
+}
+
+.whoWeAre {
+  background: linear-gradient(0.25turn,rgba(255,255,255,.00), rgba(255,255,255, .5), rgba(255,255,255,.8)),
+  url("picnic-don2.jpg");
+  background-size: 100%;
+
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+
+  text-align: left;
+  margin-top: -12.5%;
+}
+
+.whoWeAreContent {
+  margin: 20% 0% 20% 27%;
+  /* top right bottom left */
+
+  font-size: 1.75rem;
+  font-weight: 500;
+}
