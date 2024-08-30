@@ -1,39 +1,23 @@
 import './App.css'
-import Footer from './Components/footer'
-import Infoboard from './Components/infoboard'
-import Motto from './Components/motto'
-import Navbar from './Components/navbar'
-import WhoWeAre from './Components/whoWeAre'
+
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Ministries from './pages/Ministries';
+import Contact from './pages/Contact';
 
 function App() {
 
 
   return (
     <div className='main'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/ministries" element={<Ministries />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
 
-      <Navbar />
-      <div>
-        <video className='bannerVid' autoPlay loop muted>
-          <source src='/bannervid.mp4' />
-
-        </video>
-        <div className='bannerContent'>
-          <div className='tagLine1'>
-            <span className='tagGod'>Loving God, </span>
-            <span className='tagOther'>each other,</span>
-          </div>
-          <span className='tagWorld'>and the world.</span>
-          <div className='tagButtons'>
-            <button className='button'>Join In Person</button>
-            <button className='button'>Join Online</button>
-          </div>
-        </div>
-      </div>
-
-      <Motto />
-      <WhoWeAre />
-      <Infoboard />
-      <Footer />
     </div>
   )
 }
