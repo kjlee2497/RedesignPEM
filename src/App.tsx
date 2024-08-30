@@ -1,4 +1,6 @@
 import './App.css'
+import Footer from './Components/footer'
+import Infoboard from './Components/infoboard'
 import Motto from './Components/motto'
 import Navbar from './Components/navbar'
 import WhoWeAre from './Components/whoWeAre'
@@ -8,6 +10,7 @@ function App() {
 
   return (
     <div className='main'>
+
       <Navbar />
       <div>
         <video className='bannerVid' autoPlay loop muted>
@@ -26,8 +29,11 @@ function App() {
           </div>
         </div>
       </div>
-        <Motto />
-        <WhoWeAre />
+
+      <Motto />
+      <WhoWeAre />
+      <Infoboard />
+      <Footer />
     </div>
   )
 }
