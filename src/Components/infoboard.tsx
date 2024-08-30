@@ -18,7 +18,7 @@ const Infoboard = () => {
                 <div className="infocard">
                     <img src="kids-choir.jpg" alt="lighthouse foundation" />
                     <div className="infocard-content">
-                        <h2>House Church</h2>
+                        <h2>Lighthouse Foundation</h2>
                         <p>Please note that this application is only for active members of Praise English Ministry. 
                             If you have any questions, please contact us!
                         </p>
