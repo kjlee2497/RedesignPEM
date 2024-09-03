@@ -1,15 +1,12 @@
 import Navbar from '../Components/navbar'
 import Footer from '../Components/footer'
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import StaffCarousal from '../Components/StaffCarousal';
 
 
 const About = () => {
@@ -28,22 +25,8 @@ const About = () => {
 */}
       <div className='swiper-container'>
         <h2>Meet Our Staff</h2>
-        <Swiper
-          // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={0}
-          slidesPerView={3}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
-        >
-          <SwiperSlide><img src="christian headshot.jpg" alt="" /></SwiperSlide>
-          <SwiperSlide><img src="christian headshot.jpg" alt="" /></SwiperSlide>
-          <SwiperSlide><img src="christian headshot.jpg" alt="" /></SwiperSlide>
-          <SwiperSlide><img src="christian headshot.jpg" alt="" /></SwiperSlide>
-        </Swiper>
+        <StaffCarousal />
+
       </div>
 
       <Footer />

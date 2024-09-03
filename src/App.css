@@ -261,3 +261,13 @@ html, body {
   color: black;
   font-size: 250%;
 }
+
+.carousalImg {
+  width: 200px;
+  height: 200px
+}
+
+.slideActive {
+  width: 300px;
+  height: 300px;
+}
