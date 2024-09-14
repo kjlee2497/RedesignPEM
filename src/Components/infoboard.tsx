@@ -2,7 +2,7 @@
 const Infoboard = () => {
 
     return (
-        <div className='body'>
+        <div className='body fade-in'>
             <div className="infoboard">
 
                 <div className="infocard">

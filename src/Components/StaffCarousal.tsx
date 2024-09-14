@@ -69,7 +69,7 @@ const StaffCarousal = () => {
 
 
     return (
-        <div className='carousal-container'>
+        <div className='carousal-container fade-in'>
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -80,8 +80,8 @@ const StaffCarousal = () => {
                 navigation
                 loop={true}
                 freeMode={true}
-                pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
+                // pagination={{ clickable: true }}
+                // scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >

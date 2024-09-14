@@ -1,8 +1,9 @@
+import { lazy } from 'react';
+import Navbar from '../Components/navbar';
 import Footer from '../Components/footer'
-import Infoboard from '../Components/infoboard'
-import Motto from '../Components/motto'
-import Navbar from '../Components/navbar'
-import WhoWeAre from '../Components/whoWeAre'
+const Infoboard = lazy(() => import('../Components/infoboard'));
+const Motto = lazy(() => import('../Components/motto'));
+const WhoWeAre = lazy(() => import('../Components/whoWeAre'));
 import '../App.css'
 
 
@@ -14,11 +15,11 @@ function Home() {
 
       <Navbar />
       <div>
-        <video className='bannerVid' autoPlay loop muted>
+        <video className='bannerVid fade-in' autoPlay loop muted>
           <source src='/bannervid.mp4' />
 
         </video>
-        <div className='bannerContent'>
+        <div className='bannerContent fade-in'>
           <div className='tagLine1'>
             <span className='tagGod'>Loving God, </span>
             <span className='tagOther'>each other,</span>

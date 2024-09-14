@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0px;
   padding: 0px;
 }
@@ -18,6 +19,20 @@ html, body {
   text-align: center;
   width: 100%;
   overflow: auto;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1.5s;
 }
 
 .bannerVid {
@@ -92,7 +107,7 @@ html, body {
 
   width: 50%;
   margin: 21% 0% 15% 47%;
-/* top right bottom left */
+  /* top right bottom left */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -123,7 +138,7 @@ html, body {
   font-size: 14px;
 }
 
-.button:hover{
+.button:hover {
   background-color: var(--hover1);
   font-size: 41%;
   font-weight: 600;
@@ -152,12 +167,12 @@ html, body {
   font-weight: 500;
 }
 
-.motto span{
+.motto span {
   margin: 1% 0%;
   width: auto;
 }
 
-.motto b{
+.motto b {
   color: var(--pem-logo);
   font-size: 140%;
 }
@@ -169,8 +184,8 @@ html, body {
 }
 
 .whoWeAre {
-  background: linear-gradient(0.25turn,rgba(255,255,255,.00), rgba(255,255,255, .5), rgba(255,255,255,.8)),
-  url("/picnic-don2.jpg");
+  background: linear-gradient(0.25turn, rgba(255, 255, 255, .00), rgba(255, 255, 255, .5), rgba(255, 255, 255, .8)),
+    url("/picnic-don2.jpg");
   background-size: 100%;
 
   min-width: 100vw;
@@ -322,4 +337,56 @@ html, body {
 
 .beliefsContent h2 {
   margin: 4% 0% 0% 0%;
+}
+
+.ministries-banner {
+  margin-top: 3%;
+  background: linear-gradient(0.25turn, rgba(255, 255, 255, .00), rgba(255, 255, 255, .5), rgba(255, 255, 255, .8)),
+    url("/emp.jpg");
+  background-size: 100%;
+
+  min-width: 100vw;
+  min-height: 45vh;
+  z-index: -1;
+
+  text-align: left;
+}
+
+.ministries-content {
+  background: linear-gradient(0.5turn, rgba(255, 255, 255, .00), rgba(255, 190, 92, .15), rgba(255, 190, 92, 0.6));
+  text-align: left;
+}
+
+.houseChurch {
+  width: 85%;
+  margin: 0% auto;
+}
+
+.ministry-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ministry-card {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 40%;
+  margin: 2% auto;
+  border-radius: 25px;
+  padding: 1% 2.5%;
+
+  text-align: left;
+  border: 2px solid rgb(135, 135, 135);
+}
+
+.ministry-card img {
+  width: 60%;
+  height: 60%;
+  margin: 0% auto;
+}
+
+.ministry-card h1 {
+  text-align: center;
 }

@@ -1,6 +1,6 @@
 const WhoWeAre = () => {
     return (
-        <div className='whoWeAre'>
+        <div className='whoWeAre fade-in'>
             <div className='whoWeAreContent'>
                 <h2>WHO WE ARE</h2>
                 <p>There is one word that has made us different from any other church, <br />
