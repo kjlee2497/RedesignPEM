@@ -6,7 +6,7 @@ body {
 
 :root {
   --pem-logo: #3771A6;
-  --pem-darkblue: #34495E;
+  --pem-darkblue: #34495e;
 
   --hover1: rgb(77, 237, 255);
 }
@@ -73,7 +73,7 @@ body {
   height: 80px;
   background-color: white;
 
-  margin: 0% auto 0% auto;
+  margin: 0% auto 8% auto;
   width: 100%;
   padding: 0;
   text-align: center;
@@ -111,11 +111,15 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  text-shadow: 5px 3px 1px rgb(75, 75, 75);
 }
 
 .tagOther {
   color: var(--pem-logo);
   font-weight: 600;
+
+  text-shadow: 5px 3px 1px rgb(19, 19, 19);
 }
 
 .tagWorld {
@@ -184,7 +188,7 @@ body {
 }
 
 .whoWeAre {
-  background: linear-gradient(0.25turn, rgba(255, 255, 255, .00), rgba(255, 255, 255, .5), rgba(255, 255, 255, .8)),
+  background: linear-gradient(0.25turn, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, .8)),
     url("/picnic-don2.jpg");
   background-size: 100%;
 
@@ -352,8 +356,9 @@ body {
   text-align: left;
 }
 
+
 .ministries-content {
-  background: linear-gradient(0.5turn, rgba(255, 255, 255, .00), rgba(255, 190, 92, .15), rgba(255, 190, 92, 0.6));
+  background: linear-gradient(0.5turn, rgba(255, 255, 255, .00), #34495E26, #34495E99);
   text-align: left;
 }
 
@@ -369,6 +374,7 @@ body {
 }
 
 .ministry-card {
+  background-color: white;
   display: flex;
   flex-direction: column;
   width: 35%;
@@ -389,4 +395,45 @@ body {
 
 .ministry-card h1 {
   text-align: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 45%;
+  margin: 5% auto;
+
+  color: rgb(129, 129, 129);
+}
+
+.contactForm label {
+  margin: 2% 0% 1% 0%;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.contactForm input {
+  background-color: rgb(232, 232, 232);
+  border-radius: 8px;
+  border: 1px solid white;
+  height: 30px;
+  width: auto;
+}
+
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nameInputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.messageInput input {
+  padding-bottom: 10%;
+  text-align: top;
 }

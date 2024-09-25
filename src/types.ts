@@ -9,3 +9,10 @@ export type ministryType = {
     description: string,
     pic: string,
 };
+
+export type contactFormType = {
+    firstName: string,
+    lastName: string,
+    email: string,
+    message: string,
+}

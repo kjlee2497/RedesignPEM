@@ -20,11 +20,11 @@ function Home() {
 
         </video>
         <div className='bannerContent fade-in'>
-          <div className='tagLine1'>
+          <div className='tagLine'>
             <span className='tagGod'>Loving God, </span>
             <span className='tagOther'>each other,</span>
           </div>
-          <span className='tagWorld'>and the world.</span>
+          <span className='tagWorld tagLine'>and the world.</span>
           <div className='tagButtons'>
             <button className='button'>Join In Person</button>
             <button className='button'>Join Online</button>
