@@ -37,11 +37,12 @@ body {
 
 .bannerVid {
   position: absolute;
+  object-fit: cover;
   overflow: hidden;
   right: 0px;
   top: 0px;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 95%;
   z-index: -1;
 }
 
@@ -57,6 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: -2;
 }
 
 .body {
@@ -67,6 +69,7 @@ body {
 .navbar {
   position: fixed;
   top: 0;
+  z-index: 99;
 
   display: flex;
   flex-direction: row;
@@ -75,22 +78,24 @@ body {
 
   margin: 0% auto 8% auto;
   width: 100%;
-  padding: 0;
+  padding: 10px 0px;
   text-align: center;
   justify-content: center;
 }
 
 .navbarLogo {
+  z-index: 1;
   width: 75px;
   height: 75px;
   margin-right: 4rem;
 }
 
 .navbarLinks {
+  z-index: 1;
   color: var(--pem-logo);
   margin: 0 4.5rem;
   padding-top: 30px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -102,7 +107,7 @@ body {
 
 .bannerContent {
   color: white;
-  font-size: 240%;
+  font-size: 250%;
   font-weight: 500;
 
   width: 50%;
@@ -112,14 +117,14 @@ body {
   flex-direction: column;
   text-align: center;
 
-  text-shadow: 5px 3px 1px rgb(75, 75, 75);
+  text-shadow: 2px 3px 1px rgb(75, 75, 75);
 }
 
 .tagOther {
   color: var(--pem-logo);
   font-weight: 600;
 
-  text-shadow: 5px 3px 1px rgb(19, 19, 19);
+  text-shadow: 2px 3px 1px rgb(19, 19, 19);
 }
 
 .tagWorld {
@@ -149,13 +154,14 @@ body {
 }
 
 .motto {
-  margin: 2% 6%;
+  margin: -4% 10%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 
   background-color: white;
   padding: 2% 15%;
+  z-index: 1;
 }
 
 .mottoContent {
@@ -165,9 +171,10 @@ body {
   text-align: left;
 
   width: 80vw;
+  margin-left: 20%;
 
   color: black;
-  font-size: 200%;
+  font-size: 160%;
   font-weight: 500;
 }
 
@@ -178,34 +185,48 @@ body {
 
 .motto b {
   color: var(--pem-logo);
-  font-size: 140%;
+  font-size: 120%;
+  margin: 0px 3px;
 }
 
 .mottoLine {
   height: 150px;
   border-left: 3px solid rgb(170, 168, 168);
-  margin: 5% auto;
+  margin: 3% auto;
 }
 
 .whoWeAre {
   background: linear-gradient(0.25turn, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, .8)),
-    url("/picnic-don2.jpg");
+    url("/picnic-don3.jpg");
   background-size: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
 
   min-width: 100vw;
-  min-height: 100vh;
-  z-index: -1;
+  width: auto;
+  height: 80%;
 
   text-align: left;
-  margin-top: -7.5%;
+  margin-top: -1%;
 }
 
 .whoWeAreContent {
+  width: 50%;
   margin: 20% 0% 20% 27%;
   /* top right bottom left */
 
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-weight: 500;
+}
+
+.whoWeAre h2 {
+  width: 35%;
+}
+
+.whoWeAreText:hover {
+  backdrop-filter: blur(10px);
+  scale: 1.03;
+  border-radius: 8px;
 }
 
 .infoboard {
@@ -320,7 +341,7 @@ body {
   width: 75%;
 
   border-radius: 40px;
-  padding: 0%;
+  padding: 0px;
   margin: 0%;
 }
 
@@ -337,6 +358,8 @@ body {
 .beliefsContent {
   text-align: left;
   padding-bottom: 5%;
+  width: 80%;
+  margin: auto;
 }
 
 .beliefsContent h2 {
@@ -344,27 +367,63 @@ body {
 }
 
 .ministries-banner {
-  margin-top: 3%;
-  background: linear-gradient(0.25turn, rgba(255, 255, 255, .00), rgba(255, 255, 255, .5), rgba(255, 255, 255, .8)),
-    url("/emp.jpg");
-  background-size: 100%;
+  margin-top: 5%;
+  background: url("/emmausBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
 
   min-width: 100vw;
-  min-height: 45vh;
+  min-height: 400px;
   z-index: -1;
 
   text-align: left;
 }
 
+.ministriesLogo img {
+  opacity: 0.8;
+  width: 425px;
+
+  position: absolute;
+  top: 250px;
+  left: 225px;
+}
+
+.ministriesLogo h1 {
+  font-size: 80px;
+  position: absolute;
+  top: 250px;
+  left: 230px;
+  font-style: italic;
+
+  color: white;
+}
+
+.ministriesLogo span {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 400px;
+  left: 310px;
+  opacity: 1.0;
+
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.belong {
+  color: white;
+  font-style: italic;
+  margin-left: 8px;
+}
 
 .ministries-content {
-  background: linear-gradient(0.5turn, rgba(255, 255, 255, .00), #34495E26, #34495E99);
   text-align: left;
 }
 
 .houseChurch {
-  width: 85%;
-  margin: 0% auto;
+  width: 60%;
+  margin: 2.5% auto;
 }
 
 .ministry-board {
@@ -380,21 +439,37 @@ body {
   width: 35%;
   height: 40%;
   margin: 2% auto;
-  border-radius: 25px;
-  padding: 1% 2.5%;
-
+  
   text-align: left;
   border: 2px solid rgb(135, 135, 135);
 }
 
 .ministry-card img {
-  width: 60%;
+  position: block;
+  width: 100%;
   height: 60%;
   margin: 0% auto;
 }
 
+.overlay {
+  opacity: 0.0;
+  transition: .5s ease;
+  background-color: #555555;
+}
+
+.ministry-card:hover .overlay {
+  opacity: 0.5;
+}
+
 .ministry-card h1 {
   text-align: center;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .contactForm {

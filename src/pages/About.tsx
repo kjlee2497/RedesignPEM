@@ -17,20 +17,14 @@ const About = () => {
 
     <div className="main">
       <Navbar />
-
-      {/* 
-  For swiper, use a map method to create a slide for each part of an array of objects (headshots and descriptions)
-  look into documentation for ISACTIVE boolean
-  use this boolean to get the aesthetics you want
-*/}
       <div className='about-container'>
         <h2>Meet Our Staff</h2>
         <StaffCarousal />
         <div className="beliefsContent">
-        <h2>Beliefs</h2>
-        <h3>
-          We believe that Jesus is the main purpose and priority of life, and the lens through Whom we know and understand all things.
-        </h3>
+          <h2>Beliefs</h2>
+          <h3>
+            We believe that Jesus is the main purpose and priority of life, and the lens through Whom we know and understand all things.
+          </h3>
           We believe there is one God eternally existent as three Persons: God the Father, God the Son, and God the Holy Spirit. This tells us that for all of eternity, He has existed in communion, fellowship, and love with, and in, Himself. And because He is a God of love and community, He created this world as a place of love and community.
           <br />
           <br />

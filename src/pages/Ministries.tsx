@@ -7,13 +7,18 @@ const Ministries = () => {
     <div>
       <Navbar />
 
-      <div className="ministries-banner">
-        <span className='ministriesLogo'>
-        
+      <div className="ministries-banner fade-in">
+        <div className='ministriesLogo'>
+        <img src="banner icon 2.png" alt="ministries icon" />
+        <h1>Ministries</h1>
+        <span>
+          <p>Come as you are and</p>
+          <p className="belong">belong</p>
         </span>
+        </div>
       </div>
 
-      <div className='ministries-content'>
+      <div className='ministries-content fade-in'>
         <div className="houseChurch">
           <h2>House Church</h2>
           <p>

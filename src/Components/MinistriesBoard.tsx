@@ -30,9 +30,11 @@ const MinistriesBoard = () => {
       {ministries.map((ministry: ministryType) => (
         // change to hover description type card later
         <div className='ministry-card'>
-          <h1>{ministry.name}</h1>
           <img src={ministry.pic} alt="ministry picture" />
-          <p>{ministry.description}</p>
+          <div className="overlay">
+            <h1>{ministry.name}</h1>
+            <p>{ministry.description}</p>
+          </div>
         </div>
       ))}
     </div>
