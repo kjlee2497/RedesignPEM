@@ -5,6 +5,7 @@ const Infoboard = lazy(() => import('../Components/infoboard'));
 const Motto = lazy(() => import('../Components/motto'));
 const WhoWeAre = lazy(() => import('../Components/whoWeAre'));
 import '../App.css'
+import MinistriesBoard from '../Components/MinistriesBoard';
 
 
 function Home() {
@@ -47,7 +48,7 @@ function Home() {
             </div>
         </div>
 
-      <Infoboard />
+      <MinistriesBoard />
       <Footer />
     </div>
   )
