@@ -1,9 +1,7 @@
 import { lazy } from 'react';
 import Navbar from '../Components/navbar';
 import Footer from '../Components/footer'
-const Infoboard = lazy(() => import('../Components/infoboard'));
 const Motto = lazy(() => import('../Components/motto'));
-const WhoWeAre = lazy(() => import('../Components/whoWeAre'));
 import '../App.css'
 import MinistriesBoard from '../Components/MinistriesBoard';
 
