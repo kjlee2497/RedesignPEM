@@ -15,7 +15,7 @@ function Home() {
       <Navbar />
       <div>
         <video className='bannerVid fade-in' autoPlay loop muted>
-          <source src='/bannervid.mp4' />
+          <source src='/BannerVid.mov' />
 
         </video>
         <div className='bannerContent fade-in'>
