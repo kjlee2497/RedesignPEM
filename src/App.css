@@ -41,7 +41,7 @@ body {
   right: 0px;
   top: 0px;
   width: 100%;
-  height: 95%;
+  height: 100%;
   z-index: -1;
 }
 
@@ -84,8 +84,9 @@ body {
 
 .navbarLogo {
   z-index: 1;
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
+  margin: auto 0%;
   margin-right: 4rem;
 }
 
@@ -94,7 +95,7 @@ body {
   color: var(--pem-logo);
   margin: 0 4.5rem;
   padding-top: 30px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -106,11 +107,11 @@ body {
 
 .bannerContent {
   color: white;
-  font-size: 250%;
+  font-size: 300%;
   font-weight: 500;
 
   width: 50%;
-  margin: 18% 0% 15% 47%;
+  margin: 25% 0% 15% 45%;
   /* top right bottom left */
   display: flex;
   flex-direction: column;
@@ -153,7 +154,7 @@ body {
 }
 
 .motto {
-  margin: -4% 10%;
+  margin: 7% 10%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
